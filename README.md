@@ -1,217 +1,122 @@
-# Wavelet-Parkinson-Classification
+# CS-MRI-CORE
 
-## Wavelet-Based Biomedical Signal Analysis and Machine Learning Framework for Parkinson's Disease Classification
+## Parameter-Efficient Cross-Slice Adaptation of an MRI Foundation Model for Extreme Few-Shot Meningioma Segmentation
 
-This repository presents a biomedical signal processing and machine learning framework for Parkinson's disease classification using wavelet-based feature extraction techniques.
+CS-MRI-CORE is a research project focused on **MRI foundation models**, **extreme few-shot medical image segmentation**, and **parameter-efficient adaptation** for meningioma segmentation.
 
-The project focuses on transforming biomedical signals into meaningful time-frequency representations, extracting discriminative features, and applying classification approaches for automated analysis.
+> **Manuscript status:** Submitted for peer review.
 
----
-
-# Overview
-
-Parkinson's disease is a neurological disorder that can affect motor functions and biomedical signal characteristics.
-
-This project investigates the application of signal processing and machine learning techniques for analyzing biomedical signals associated with Parkinson's disease.
-
-The main focus is on wavelet-based analysis, which enables simultaneous investigation of temporal and frequency characteristics of biomedical signals.
+The current public repository is intended to document the project and its research scope. The full experimental implementation, medical imaging data, and trained checkpoints are not included in the present public release.
 
 ---
 
-# Research Objectives
+## Research Focus
 
-The objectives of this project include:
+The project investigates how a pretrained MRI foundation model can be adapted to a target segmentation task when only a very limited amount of labeled data is available.
 
-- Developing a complete biomedical signal processing pipeline
-- Applying wavelet transform techniques for signal analysis
-- Extracting meaningful time-frequency domain features
-- Designing machine learning-based classification workflows
-- Evaluating model performance using standard classification metrics
+The main research themes are:
 
----
-
-# Methodology
-
-The proposed framework consists of several processing stages:
-
-## 1. Signal Preprocessing
-
-Raw biomedical signals are prepared through preprocessing techniques including:
-
-- Noise reduction
-- Signal normalization
-- Signal conditioning
-- Data preparation
+- MRI foundation models
+- Few-shot medical image segmentation
+- Parameter-efficient adaptation
+- Cross-slice contextual information
+- Meningioma segmentation
+- Data-efficient deep learning
 
 ---
 
-## 2. Wavelet-Based Signal Analysis
+## Motivation
 
-Wavelet transformation is applied to analyze biomedical signals in both temporal and frequency domains.
+Medical image segmentation models often depend on substantial amounts of expert-annotated data. In clinical imaging, obtaining high-quality segmentation labels can be expensive and time-consuming.
 
-Implemented approaches may include:
+CS-MRI-CORE studies a more data-efficient setting by combining a pretrained MRI representation with a lightweight adaptation strategy and contextual information from neighboring slices.
 
-- Discrete Wavelet Transform (DWT)
-- Wavelet decomposition
-- Multi-resolution signal analysis
+The objective is to investigate whether useful task adaptation can be achieved without full model fine-tuning under extreme few-shot supervision.
 
 ---
 
-## 3. Feature Extraction
-
-Relevant characteristics are extracted from processed signals, including:
-
-- Statistical features
-- Frequency-domain features
-- Wavelet coefficients
-- Time-frequency representations
-
----
-
-## 4. Classification
-
-Extracted features are used for machine learning-based classification.
-
-Potential classification approaches include:
-
-- Traditional machine learning models
-- Ensemble learning methods
-- Deep learning approaches
-
----
-
-## 5. Evaluation
-
-Classification performance is evaluated using common metrics:
-
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Confusion matrix
-- ROC analysis
-
----
-
-# Project Structure
+## Conceptual Pipeline
 
 ```text
-Wavelet-Parkinson-Classification/
+MRI Input
+   |
+   v
+Target Slice + Cross-Slice Context
+   |
+   v
+Pretrained MRI Foundation Model
+   |
+   v
+Parameter-Efficient Adaptation
+   |
+   v
+Few-Shot Segmentation
+   |
+   v
+Meningioma Mask Prediction
+   |
+   v
+Evaluation
+```
 
-│
-├── data/
-│   └── Dataset organization and preparation
-│
-├── notebooks/
-│   └── Experimental analysis and visualization notebooks
-│
-├── src/
-│
-│   ├── preprocessing/
-│   │   └── Signal preprocessing methods
-│   │
-│   ├── wavelet_transform/
-│   │   └── Wavelet decomposition and analysis
-│   │
-│   ├── feature_extraction/
-│   │   └── Feature generation from biomedical signals
-│   │
-│   ├── classification/
-│   │   └── Machine learning classification models
-│   │
-│   └── evaluation/
-│       └── Model evaluation and performance analysis
-│
-├── results/
-│   └── Experimental results and visualizations
-│
+---
+
+## Repository Status
+
+This repository currently contains the public-facing structure and documentation for the project.
+
+### Publicly available
+
+- Project description
+- Dependency list
+- Dataset placeholder/documentation
+- Checkpoint placeholder/documentation
+- License
+
+### Not included in the current public release
+
+- Original medical imaging data
+- Trained model checkpoints
+- Full training implementation
+- Full evaluation implementation
+- Manuscript source files
+
+The repository may be expanded after the peer-review process, subject to publication and data-usage requirements.
+
+---
+
+## Repository Structure
+
+```text
+CS-MRI-CORE/
+├── README.md
 ├── requirements.txt
 ├── LICENSE
-└── README.md
+├── data/
+│   └── README.md
+└── checkpoints/
+    └── README.md
 ```
 
 ---
 
-# Technologies
+## Dependencies
 
-The project is developed using:
-
-- Python
-- NumPy
-- Pandas
-- SciPy
-- Scikit-learn
-- PyWavelets
-- TensorFlow
-- PyTorch
-- Matplotlib
-
----
-
-# Workflow
+The current environment specification includes:
 
 ```text
-Biomedical Signal
-        |
-        ↓
-Preprocessing
-        |
-        ↓
-Wavelet Transformation
-        |
-        ↓
-Feature Extraction
-        |
-        ↓
-Classification Model
-        |
-        ↓
-Performance Evaluation
+torch
+torchvision
+numpy
+pandas
+opencv-python
+scikit-learn
+matplotlib
+tqdm
+nibabel
 ```
 
----
-
-# Dataset
-
-Due to data usage restrictions, original biomedical datasets are not included in this repository.
-
-Dataset preparation and usage should follow the corresponding dataset access policies.
-
----
-
-# Results
-
-Experimental results, model comparisons, and visualization outputs will be added after completing final experiments.
-
-The results section will include:
-
-- Classification performance metrics
-- Feature analysis
-- Model comparison
-- Visualization of signal processing steps
-
----
-
-# Future Development
-
-Future improvements may include:
-
-- Advanced feature selection techniques
-- Deep learning-based architectures
-- Hybrid signal processing and AI approaches
-- Improved generalization across biomedical datasets
-
----
-
-# Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/milad-rezaei-arjmand/Wavelet-Parkinson-Classification.git
-```
-
-Install dependencies:
+Install with:
 
 ```bash
 pip install -r requirements.txt
@@ -219,44 +124,43 @@ pip install -r requirements.txt
 
 ---
 
-# Requirements
+## Data Availability
 
-Main dependencies:
+Medical imaging data are not distributed through this repository.
 
-```text
-numpy
-pandas
-scipy
-scikit-learn
-matplotlib
-pywavelets
-tensorflow
-torch
-```
+Dataset access, preparation, and use must follow the terms and policies of the corresponding data provider.
 
 ---
 
-# Citation
+## Model Checkpoints
 
-If you use this repository or build upon this work, citation information will be added after project publication.
+Trained checkpoints are not included in the current public release.
 
-```
-Coming soon.
-```
+If checkpoints are released later, download instructions and model-loading details should be documented in this repository.
 
 ---
 
-# Author
+## Publication
+
+**CS-MRI-CORE: Parameter-Efficient Cross-Slice Adaptation of an MRI Foundation Model for Extreme Few-Shot Meningioma Segmentation**
+
+**Status:** Submitted manuscript / under peer review
+
+Citation information will be added if and when the manuscript is published.
+
+---
+
+## Author
 
 **Milad Rezaei Arjmand**
 
-M.Sc. Student in Biomedical Engineering (Bioelectric)
+M.Sc. Student in Biomedical Engineering (Bioelectric)  
+Research interests: Medical Artificial Intelligence, Medical Imaging, Foundation Models, Medical Image Segmentation, and Data-Efficient Deep Learning.
 
-Research Interests:
+---
 
-- Medical Artificial Intelligence
-- Biomedical Signal Processing
-- Medical Imaging
-- Deep Learning
-- Biomedical Data Analysis
-```
+## License
+
+See the `LICENSE` file included in this repository.
+
+The license applies to repository content only. Any external datasets remain subject to their original licenses and terms of use.
