@@ -1,5 +1,7 @@
 # Dataset
 
-Medical imaging datasets are not included in this repository.
+Medical imaging data are not distributed through this repository.
 
-Dataset preparation and usage details will be provided according to data usage policies.
+Dataset access, preparation, and use must follow the terms and policies of the corresponding data provider.
+
+Detailed preparation instructions may be added in a future research release.
