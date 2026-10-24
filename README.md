@@ -6,7 +6,7 @@
 
 Faculty of Biomedical Engineering, Sahand University of Technology, Tabriz, Iran
 
-Accepted for poster presentation at **ICBME 2026**.
+Accepted at **ICBME 2026**.
 
 CS-MRI-CORE adapts MRI-CORE ViT-B to meningioma gross tumor volume (GTV)
 segmentation in contrast-enhanced T1-weighted MRI. It shares one encoder across
@@ -183,7 +183,7 @@ environment needed for exact score replay are not bundled.
   title = {CS-MRI-CORE: Parameter-Efficient Cross-Slice Adaptation of an MRI Foundation Model for Extreme Few-Shot Meningioma Segmentation},
   author = {Milad Rezaei Arjmand and Mousa Shamsi},
   year = {2026},
-  note = {Accepted for poster presentation at ICBME 2026}
+  note = {Accepted at ICBME 2026}
 }
 ```
 
