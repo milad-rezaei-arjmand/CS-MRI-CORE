@@ -9,7 +9,7 @@ authors:
   - given-names: "Mousa"
     family-names: "Shamsi"
     affiliation: "Faculty of Biomedical Engineering, Sahand University of Technology, Tabriz, Iran"
-abstract: "Code preparation for the conference paper accepted at ICBME 2026. A paper DOI and public software release identifier have not been assigned in this preparation."
+abstract: "Code for the conference paper accepted at ICBME 2026. A paper DOI and public software release identifier have not been assigned."
 keywords:
   - MRI
   - meningioma
