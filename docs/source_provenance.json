@@ -1,0 +1,44 @@
+[
+  {
+    "release_path": "scripts/train_baseline_repeat00.py",
+    "archive_relative_path": "scripts/train_baseline_repeat00.py",
+    "archive_sha256": "f66ea796e4623fd97dd47c44a5a5030f68c90b57b54dd25eded44554a22a9461",
+    "release_sha256": "a17c0c2a8d64006f1cdb4c7408bf0ce78316f9d0571fd7fb6f830ade14fbf1ac",
+    "changes": "Path assignments only; training repeat paths/metadata made selectable (00-04). Formatting normalized by Python AST."
+  },
+  {
+    "release_path": "scripts/train_mean_fusion_repeat00.py",
+    "archive_relative_path": "scripts/train_mean_fusion_repeat00.py",
+    "archive_sha256": "3e7e6c5b21d679fb717be023981c1cd927185d9cc33b9c156721f37b055fbd0e",
+    "release_sha256": "fa79cca63ddcb7e6af43376e0f91e55d904fb125f0e5e5a64cbf1d70d21d348d",
+    "changes": "Path assignments only; training repeat paths/metadata made selectable (00-04). Formatting normalized by Python AST."
+  },
+  {
+    "release_path": "scripts/crossslice_dataset.py",
+    "archive_relative_path": "scripts/crossslice_dataset.py",
+    "archive_sha256": "97a7fd29f680df6400f8e3765ee1ab52b2dc34993ccc202c25f6131226b1d32f",
+    "release_sha256": "10596c23bbcdba1d3906f75c5bcfcf261c29b337eab2e995635dae85503ddf0f",
+    "changes": "Path assignments only; training repeat paths/metadata made selectable (00-04). Formatting normalized by Python AST."
+  },
+  {
+    "release_path": "scripts/build_mricore_cache.py",
+    "archive_relative_path": "scripts/build_mricore_cache.py",
+    "archive_sha256": "b6e87fc72116bf3672bbfb432798eb4726508d412aeca81d54effe793f65888b",
+    "release_sha256": "d188db057bd1cca453380e8d60a976606b462aa0bcd70698549e254d45ce52d0",
+    "changes": "Path assignments only; training repeat paths/metadata made selectable (00-04). Formatting normalized by Python AST."
+  },
+  {
+    "release_path": "scripts/build_final_holdout_cache_seed2026.py",
+    "archive_relative_path": "scripts/build_final_holdout_cache_seed2026.py",
+    "archive_sha256": "0c26f5561510b416d13b785d99a588825606cea94556c17238cc63e8b9d09d61",
+    "release_sha256": "635324f87102ca79957759350f109453265cf852f1b92521e9aebc8751c2c094",
+    "changes": "Path assignments only; training repeat paths/metadata made selectable (00-04). Formatting normalized by Python AST."
+  },
+  {
+    "release_path": "scripts/evaluate_final_holdout_repeat00_04.py",
+    "archive_relative_path": "scripts/evaluate_final_holdout_repeat00_04.py",
+    "archive_sha256": "0723994ebbf1d60ad5ae6d71f151b599f31d850b29a40b3a5cad3256e98afeee",
+    "release_sha256": "d93675bc906d4a3afe4bfd6ade25138267f44c54b21d2ddef7e8c56d303cf6ff",
+    "changes": "Path assignments only; training repeat paths/metadata made selectable (00-04). Formatting normalized by Python AST."
+  }
+]

@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite the accepted CS-MRI-CORE conference paper and the upstream MRI-CORE and BraTS-MEN-RT resources."
+type: software
+title: "CS-MRI-CORE: Parameter-Efficient Cross-Slice Adaptation of an MRI Foundation Model for Extreme Few-Shot Meningioma Segmentation"
+authors:
+  - given-names: "Milad"
+    family-names: "Rezaei Arjmand"
+    affiliation: "Faculty of Biomedical Engineering, Sahand University of Technology, Tabriz, Iran"
+  - given-names: "Mousa"
+    family-names: "Shamsi"
+    affiliation: "Faculty of Biomedical Engineering, Sahand University of Technology, Tabriz, Iran"
+abstract: "Code preparation for the accepted ICBME 2026 poster paper. A paper DOI and public software release identifier have not been assigned in this preparation."
+keywords:
+  - MRI
+  - meningioma
+  - few-shot segmentation
+  - parameter-efficient adaptation

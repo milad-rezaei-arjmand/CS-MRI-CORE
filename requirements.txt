@@ -1,9 +1,14 @@
-torch
-torchvision
-numpy
-pandas
-opencv-python
-scikit-learn
-matplotlib
-tqdm
-nibabel
+# Suggested setup based on the upstream instructions; not a recovered historical environment lock.
+torch==2.6.0
+torchvision==0.21.0
+monai==1.5.0
+numpy>=1.26,<3
+scipy>=1.11,<2
+nibabel>=5.2,<6
+Pillow>=10,<13
+einops>=0.7,<1
+scikit-image>=0.22,<1
+timm>=0.9,<2
+matplotlib>=3.8,<4
+scikit-learn>=1.4,<2
+tqdm>=4.66,<5

@@ -1,0 +1,44 @@
+{
+  "backbone": "MRI-CORE ViT-B",
+  "image_size": 1024,
+  "decoder_output_size": 256,
+  "encoder_adapter_depths": [
+    0,
+    1,
+    10,
+    11
+  ],
+  "decoder_adapter_depth": 2,
+  "trainable_parameters": 3682816,
+  "training_center_slices": 5,
+  "validation_center_slices": 5,
+  "unlabeled_context_offsets": [
+    -1,
+    1
+  ],
+  "fusion": "arithmetic mean of three embeddings",
+  "repeats": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seed": 0,
+  "epochs": 3000,
+  "validation_frequency": 10,
+  "micro_batch": 1,
+  "effective_batch": 2,
+  "learning_rate": 0.0001,
+  "warmup_iterations": 200,
+  "loss": "MONAI DiceCELoss(sigmoid=True)",
+  "inference_threshold": "logit > 0",
+  "native_mask_resize": "nearest",
+  "inference_boundary_policy": "edge replication",
+  "holdout_cases": 50,
+  "holdout_slices": 7928,
+  "paired_statistical_unit": "repeat (n=5)",
+  "final_csv_sha256": "01dc8be8c1bfd88950959d06a76ba952f9760c249f58204c7ca0b1b9d37af1db",
+  "final_list_sha256": "356e9c5f225e1857336a89f86ae7d7c44ee5359e9d9726bfe169b240fc097cbb",
+  "experimental_environment_versions": "Not independently recovered from the locked training environment; requirements are a suggested setup, not a verified historical lock."
+}
