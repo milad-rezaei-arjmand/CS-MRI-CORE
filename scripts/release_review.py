@@ -67,7 +67,7 @@ def main():
                 if pattern.search(data): findings.append({'file':name,'check':label})
     # Verify the exact allowed scientific assets rather than permitting arbitrary PNGs.
     expected_assets={
-     'assets/Figure_1_CS_MRI_CORE.png':'cedd51b314cf7f82749997e7ad71f81a1ce6ee3f4bb28b3a7dbbdc90f89f77ec',
+     'assets/Figure_1_CS_MRI_CORE.png':'9f4ebf0fa9836f842dda5ecf58326b79f6559e7eb813cc9c5260f9d937657279',
      'assets/Figure_3_locked_repeat_results.png':'e9fd5ebdcca0e7af55f34be80ecad867181d718afe6ed042684e23fdc284297e'}
     for name,expected in expected_assets.items():
         if hashlib.sha256((REPOSITORY/name).read_bytes()).hexdigest()!=expected:

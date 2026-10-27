@@ -12,8 +12,18 @@ CS-MRI-CORE adapts MRI-CORE ViT-B to meningioma gross tumor volume (GTV)
 segmentation in contrast-enhanced T1-weighted MRI. It shares one encoder across
 three adjacent axial slices and averages their embeddings before mask decoding.
 Only the center slice supplies the training target. Neighboring slices supply
-unlabeled context. Adapter tuning updates 3.68 million of 97.04 million
-parameters (3.795%) without introducing a trainable 3D backbone.
+unlabeled context, without introducing a trainable 3D backbone.
+
+The model registers 3,682,816 parameters with `requires_grad=True` (3.795% of
+97,044,974 total parameters). Source inspection and a synthetic CPU gradient
+check identified 2,499,328 loss-connected adapter parameters (2.575%). The
+remaining 1,183,488 registered parameters belong to four `Depth_Adapter` modules
+not invoked in the evaluated forward path. Both Single-Slice MRI-CORE and
+CS-MRI-CORE share this configuration. The synthetic check did not directly
+observe or replay historical optimizer updates.
+
+The `trainable_parameters` field in `configs/locked_protocol.json` records the
+registered `requires_grad=True` count, rather than the loss-connected subset.
 
 ![CS-MRI-CORE architecture](assets/Figure_1_CS_MRI_CORE.png)
 
